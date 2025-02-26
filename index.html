@@ -16,7 +16,118 @@
     user-select: none;
 }
 
+/*art book*/
 
+.team {
+            width: 100%;
+            height: 80vh;
+            background: url('') center center/cover no-repeat fixed;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .team h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 55px;
+            margin-bottom: 30px;
+        }
+
+        .team h1 span {
+            color: #fac031;
+            margin-left: 15px;
+            font-family: mv boli;
+        }
+
+        .team h1 span::after {
+            content: '';
+            width: 100%;
+            height: 2px;
+            background: #fac031;
+            display: block;
+            position: relative;
+            bottom: 15px;
+        }
+
+        .team .team_box {
+            width: 95%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: 13%;
+            flex-wrap: wrap;
+        }
+
+        .team .team_box .profile {
+            width: 320px;
+            height: 320px;
+            border-radius: 20px;
+            margin: 0 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+            transition: 0.4s;
+        }
+
+        .team .team_box .profile img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+            z-index: 2;
+            transition: 0.4s;
+        }
+
+        .team .team_box .profile:hover img {
+            border-radius: 20px;
+            margin-top: -230px;
+        }
+
+        .team .team_box .profile .info {
+            position: absolute;
+            text-align: center;
+            top: 70%;
+            transition: 0.4s;
+        }
+
+        .team .team_box .profile .info .name,
+        .team .team_box .profile .info .author,
+        .team .team_box .profile .info .price {
+            color: #fac031;
+            display: none; /* Initially hide all */
+        }
+
+        .buy-button {
+            background-color: #fac031; /* Yellow background */
+            color: black; /* Text color */
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            position: absolute;
+            bottom: 10px; 
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 16px;
+            text-decoration: none; 
+            text-align: center; 
+        }
+
+        
+       
+/*end art book*/
+
+
+
+/* كتب التصميم*/
 
 .b{
     
@@ -180,7 +291,7 @@
     margin: 0 80px;
     transition: 0.3s;
 }
-  
+  /* استعلامات الوسائط */
   @media (max-width: 768px) {
             .b h1 {
                 font-size: 40px;
@@ -220,6 +331,13 @@
                 padding: 6px 8px;
             }
         }
+
+/*انتهاء كتب التصميم*/
+
+
+
+
+/*  كتب السفر و الرياضه*/
 
 h1 {
             text-align: center;
@@ -296,119 +414,8 @@ h1 {
             font-style: italic;
             font: bold;
         }
-
-
-
-.team {
-            width: 100%;
-            height: 80vh;
-            background: url('') center center/cover no-repeat fixed;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .team h1 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 55px;
-            margin-bottom: 30px;
-        }
-
-        .team h1 span {
-            color: #fac031;
-            margin-left: 15px;
-            font-family: mv boli;
-        }
-
-        .team h1 span::after {
-            content: '';
-            width: 100%;
-            height: 2px;
-            background: #fac031;
-            display: block;
-            position: relative;
-            bottom: 15px;
-        }
-
-        .team .team_box {
-            width: 95%;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            top: 13%;
-            flex-wrap: wrap;
-        }
-
-        .team .team_box .profile {
-            width: 320px;
-            height: 320px;
-            border-radius: 20px;
-            margin: 0 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-            transition: 0.4s;
-        }
-
-        .team .team_box .profile img {
-            width: 250px;
-            height: 250px;
-            object-fit: cover;
-            object-position: center;
-            border-radius: 50%;
-            cursor: pointer;
-            box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-            z-index: 2;
-            transition: 0.4s;
-        }
-
-        .team .team_box .profile:hover img {
-            border-radius: 20px;
-            margin-top: -230px;
-        }
-
-        .team .team_box .profile .info {
-            position: absolute;
-            text-align: center;
-            top: 70%;
-            transition: 0.4s;
-        }
-
-        .team .team_box .profile .info .name,
-        .team .team_box .profile .info .author,
-        .team .team_box .profile .info .price {
-            color: #fac031;
-            display: none; 
-        }
-
-        .buy-button {
-            background-color: #fac031; 
-            color: black; 
-            border: none;
-            border-radius: 5px;
-            padding: 10px 20px;
-            cursor: pointer;
-            position: absolute;
-            bottom: 10px; 
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 16px;
-            text-decoration: none; 
-            text-align: center; 
-        }
-
-        
-       
-
-
-
-
-
+/* انتهاءكتب السفر و الرياضه*/
+/*كتب الطبخ*/
 
 .menu {
             width: 100%;
@@ -508,9 +515,9 @@ h1 {
             background-color: #ffa800;
             color: #000;
         }
-    
+        /*انتهاء كتب الطبخ*/
 
-
+/* navbar*/
 
 .navbar {
             display: flex;
@@ -602,8 +609,8 @@ h1 {
             margin-top:4vh;
            
         }
-
-
+/*end navbar*/
+/*cercle*/
 
 .button-container {
             position: fixed;
@@ -643,8 +650,8 @@ h1 {
         #Sports { background-color: #ffd700; } 
         #Food { background-color: #ff6347; } 
 
-
-
+/*end sercle*/
+/*telphone*/
 
 .hamburger {
             display: none;
@@ -698,7 +705,8 @@ h1 {
         
         }
         }
-        @media (max-width:768px){
+/*end telphone*/
+@media (max-width:768px){
     
 
     .button {
@@ -714,7 +722,8 @@ h1 {
 
     
 }
-
+/*end midia sercle*/
+/*midia art*/
 @media (max-width:768px){
 
 .team {
@@ -737,11 +746,10 @@ h1 {
 }
 
 
-
 </style>
 
 <body>
-
+<!--navbar-->
     <section id="hom">
         
     <nav class="navbar">
@@ -758,7 +766,7 @@ h1 {
                 <div class="dropdown-content">
                     <ul>
                         <li><a href="#literature">أدبية</a></li>
-                        <li><a href="rw2.html">مدرسية</a></li>
+                        <li><a href="school.html">مدرسية</a></li>
                         <li><a href="#scientific">علمية</a></li>
                         <li><a href="other.html">أخرى</a></li>
                         <li><a href="#electronic">الكترونية</a></li>
@@ -774,10 +782,10 @@ h1 {
         </ul>
     </nav>
 </section>
+<!--end navbar-->
 
 
-
-    
+    <!-- الفن -->
     <section id="Artt">
         <div class="team">
             <h1><span>Art </span> Books </h1>
@@ -872,7 +880,8 @@ h1 {
                 </div>
             </div>
         </section>
-     
+        <!-- انتهاء الفن -->
+    <!--cercle-->
 
 <div class="button-container">
     <a href="#Artt" id="Art" class="button">Art</a>
@@ -883,7 +892,9 @@ h1 {
     <a href="#Sportss" id="Sports" class="button">Sports</a>
     <a href="#food" id="Food" class="button">Cook</a>
 </div>
-
+<!--end cercle-->
+   <!-- 6 التسويق-->
+    
 
 <section id="Markiting"> 
  
@@ -1045,7 +1056,11 @@ h1 {
     
     
 </section>
-   
+    <!--  انتهاء التسويق-->
+
+
+
+   <!--التصميم-->
 
 <section id="Designn"> 
  
@@ -1206,6 +1221,8 @@ h1 {
     
     
 </section>
+<!--انتهاء التصميم-->
+<!--8اليوغا -->
 
 <section id="Yoga"> 
  
@@ -1379,6 +1396,8 @@ h1 {
     
 </section>
 
+<!--انتهاء اليوغا-->
+<!--15 كتب السفر -->
 
 
 <div class="b">
@@ -1529,7 +1548,8 @@ h1 {
     </div>
 </div>
 </section>
-
+<!-- انتهاء كتب السفر-->
+<!-- 20كتب الرياضه  -->
 
 <div class="b">
     <h1><span>Sports</span>Books</h1>
@@ -1693,7 +1713,9 @@ h1 {
     </div>
 </div>
 </section>
-
+<!--انتهاء كتب الرياضه  -->
+<!-- 30 الطبخ -->
+ 
 <section id="food">
     <div class="b">
         <h1><span>Cook</span>Books</h1>
@@ -1705,7 +1727,8 @@ h1 {
         </div>
     </div>
 </section>
-
+<!--انتهاء الطبخ-->
+   
 <script>
     
     const books = [
